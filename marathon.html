@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Race Registration</h1>
+<body>
+    <div>
+        <form action="/tacos">
+       <p>
+        <label for="firstname">First Name</label>
+        <input type="text" name="First Name" id="firstname" placeholder="First Name" minlength="3" required maxlength="20">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="Last Name" id="lastname" placeholder="Last Name" maxlength="20" minlength="2" required>
+       </p> 
+        
+       <p>
+           <p>Select a Race</p>
+           <div>
+           <input type="radio" name="race" value="funrun">
+           <label for="race">Fun Run</label>
+</div>
+<div>
+           <input type="radio" name="race" id="race" value="halfmarathon">
+           <label for="race">Half Marathon</label>
+</div>
+<div>
+           <input type="radio" name="race" id="race" value="fullmarathon">
+           <label for="race">Full Marathon</label>
+</div>
+</p>
+       </p>
+        
+        
+       <p>
+           <label for="email">Email</label>
+           <input type="email" name="email" id="email" required>
+           <label for="password">Password</label>
+           <input type="password" name="password" id="password" required>
+       </p>
+       <label for="age-select">Choose a age</label>
+           <select name="age" id="age" >
+               <option value="">Please choose an option</option>
+           <option value="18">under 18</option>
+           <option value="18" selected>18-30</option>
+           <option value="18">30-50</option>
+           <option value="18">50+</option>
+</select>
+<div>
+       <button>Register</button>
+       </div>
+
+        </form>
+    </div>
+</body>
+</html>

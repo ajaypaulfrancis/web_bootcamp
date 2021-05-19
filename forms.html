@@ -43,8 +43,46 @@
             <button>Submit</button>
         </form>
         <input type="submit" value="CLick me">
+        <button>Not inside form</button>
 
+       <h2>More Birds</h2> 
+       <form action="/birds">
+       <input type="checkbox" name="agree_tos" id="agree" checked>
+       <label for="agree">I agree to everything</label>
+       <p>
+       <input type="radio" name="size" id="xs" value="AJ">
+       <label for="xs">xs</label>
+       <input type="radio" name="size" id="s" value="Damon">
+       <label for="xs">S</label>
+       <input type="radio" name="size" id="m" value="Pavge">
+       <label for="xs">M</label>
         
+
+    </p>
+    <p>
+        <label for="">Please select an entree</label>
+        <select name="meal" id="meal">
+            <option value="null">Please select a meal</option>
+        <option value="sambar" selected>Idli&Sambar</option>
+        <option value="beef">Porotta&Beef</option>
+        <option value="fish">Kappa&fish</option>
+    </select>
+    <p>
+         <label for="cheese">Amoutn of Cheese:</label>
+        <input type="range" name="cheese" id="cheese" min="0" max="200" step="7">
+    </p>
+    </p>
+    <p>
+        <label for="requests">Any special requests?</label> 
+        <textarea name="requests" id="requests" cols="30" placeholder="any text here" rows="10"></textarea>
+    </p>
+    <form action="/dummy"></form>
+    <label for="first">Enter firstname</label>
+    <input type="text" name="username" id="username" required>
+    <p>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" minlength="5">
+    <button>Submit</button>
+</form>
     </body>
-    <button>Not inside form</button>
 </html>
